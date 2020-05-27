@@ -8,9 +8,9 @@
 
 Simple marketplace to lists products that one might want to sell.
 
-<div style="text-align:center;align-self:center;">
-<img height=200 src='https://s7.gifyu.com/images/add.gif' />
-<img src='https://s7.gifyu.com/images/remove.gif' />
+<div style="text-align:center;width:100%;">
+<img height=500 src='https://s7.gifyu.com/images/add.gif' />
+<img height=500 src='https://s7.gifyu.com/images/remove.gif' />
 </div>
 
 #### Stack:
