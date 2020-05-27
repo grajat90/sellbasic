@@ -1,3 +1,5 @@
+//
+
 import React, {useState, useEffect, useRef} from 'react';
 import {
   SafeAreaView,
@@ -15,21 +17,22 @@ import {getProducts, addProduct, removeProduct} from './assets/api';
 import Addcard from './assets/Addcard';
 
 const App = () => {
-  var prev = useRef();
-  const [products, setProducts] = useState([]);
-  const [modalVisibility, setModalVisibility] = useState(false);
+  var prev = useRef(); //reference state
+  const [products, setProducts] = useState([]); //local copy of products
+  const [modalVisibility, setModalVisibility] = useState(false); //for use in modal
+  //new item variable for adding new product
   const [newitem, setNewitem] = useState({
     id: 0,
     item: '',
     description: '',
   });
+  //callback for api to update producst to
   const onFetchProducts = (items) => {
     setProducts([]);
     items.forEach((item) => {
       setProducts((prev) => {
         prev.forEach((current) => {
           if (item.id == current.id) {
-            console.log('here');
           }
         });
         return [
