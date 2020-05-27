@@ -1,5 +1,8 @@
+// API for communication with firebase firestore
+
 import firestore from '@react-native-firebase/firestore';
 
+// Add a new product
 export function addProduct(product, onSubmit) {
   firestore()
     .collection('products')
@@ -9,10 +12,11 @@ export function addProduct(product, onSubmit) {
       description: product.description,
       submitted: firestore.Timestamp.now(),
     })
-    .then((data) => onSubmit(data))
-    .catch((error) => console.log(error));
+    .then((data) => onSubmit(data)) //Callback called for successful addtion
+    .catch((error) => console.log(error)); //log errors
 }
 
+// Remove a product
 export function removeProduct(id, onRemove) {
   firestore()
     .collection('products')
@@ -22,19 +26,23 @@ export function removeProduct(id, onRemove) {
       docs.forEach((doc) => {
         doc.ref.delete();
       });
-      onRemove();
-    });
+      onRemove(); //Callback call for successful removal
+    })
+    .catch((error) => console.log(error)); //log any errors
 }
 
+// Get Product listing (Fetch)
 export async function getProducts(onFetch) {
   products = [];
   await firestore()
     .collection('products')
+    .orderBy('submitted', 'asc')
     .get()
     .then((docs) => {
       docs.forEach((doc) => {
         products.push(doc.data());
       });
-    });
-  onFetch(products);
+      onFetch(products); //Callback for successful product fetch
+    })
+    .catch((error) => console.log(error)); //log errors
 }

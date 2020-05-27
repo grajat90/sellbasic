@@ -1,4 +1,4 @@
-//
+//Main App
 
 import React, {useState, useEffect, useRef} from 'react';
 import {
@@ -26,9 +26,10 @@ const App = () => {
     item: '',
     description: '',
   });
-  //callback for api to update producst to
+
+  //callback for api to update producst to local state
   const onFetchProducts = (items) => {
-    setProducts([]);
+    setProducts([]); // clear products to remove previous stale states
     items.forEach((item) => {
       setProducts((prev) => {
         prev.forEach((current) => {
@@ -49,10 +50,13 @@ const App = () => {
       });
     });
   };
+
+  //initial state update
   useEffect(() => {
     getProducts(onFetchProducts);
   }, []);
 
+  //update into firestore and local state whenever any new item is added
   useEffect(() => {
     if (newitem.item != '' && newitem.item != prev) {
       addProduct(newitem, onAddProduct);
@@ -61,7 +65,9 @@ const App = () => {
     }
   }, [newitem]);
 
+  //callback for modal form submit button
   const newProd = (prod) => {
+    // Generate id randomly
     const id = Math.floor(Math.random() * 100000);
     setNewitem({
       id: id,
@@ -70,14 +76,17 @@ const App = () => {
     });
   };
 
+  //callback for new product addition for api
   const onAddProduct = (item) => {
     getProducts(onFetchProducts);
   };
 
+  //callback for product removal to trigger api action
   const onRemove = (id) => {
     removeProduct(id, onRemoveComplete);
   };
 
+  //callback for api on product removal
   const onRemoveComplete = (data) => {
     getProducts(onFetchProducts);
   };
@@ -98,9 +107,11 @@ const App = () => {
           onPress={() => setModalVisibility(true)}
         />
       </View>
+      {/* modal form for new product */}
       <Modal
         isVisible={modalVisibility}
         backdropOpacity={0.5}
+        // press anywhere outside modal to dismiss keyboard from screen
         onBackdropPress={() => Keyboard.dismiss()}>
         <SafeAreaView>
           <Addcard submit={newProd} />
@@ -115,6 +126,7 @@ const App = () => {
   );
 };
 
+//CSS styles
 const styles = StyleSheet.create({
   cards: {
     padding: 15,

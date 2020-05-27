@@ -1,3 +1,5 @@
+// Card component for modal form to add a new product
+
 import React, {useState, useEffect} from 'react';
 import {
   StyleSheet,
@@ -9,6 +11,7 @@ import {
 } from 'react-native';
 
 const Addcard = ({submit}) => {
+  //set a state for form values
   const [form, setForm] = useState({
     name: '',
     description: '',
@@ -20,6 +23,7 @@ const Addcard = ({submit}) => {
       <Text style={styles.label}>Product</Text>
       <TextInput
         style={styles.input}
+        // keep updating state for submit button
         onChangeText={(text) =>
           setForm((prev) => ({name: text, description: prev.description}))
         }
@@ -29,17 +33,20 @@ const Addcard = ({submit}) => {
         multiline
         numberOfLines={3}
         style={styles.input}
+        // keep updating state for submit button
         onChangeText={(text) =>
           setForm((prev) => ({description: text, name: prev.name}))
         }
       />
       <View style={{paddingVertical: 20}}>
+        {/* Add product button uses the callback provided by app.js */}
         <Button title="Add Product" onPress={() => submit(form)} />
       </View>
     </View>
   );
 };
 
+// CSS styles
 const styles = StyleSheet.create({
   card: {
     borderRadius: 5,

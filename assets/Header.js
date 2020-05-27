@@ -1,3 +1,5 @@
+// Main Header component
+
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 
@@ -9,6 +11,7 @@ const Header = ({title}) => {
   );
 };
 
+// CSS styles
 const styles = StyleSheet.create({
   header: {
     padding: 15,

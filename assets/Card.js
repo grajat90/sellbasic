@@ -1,7 +1,11 @@
+// Card component for products
+
 import React from 'react';
 import {StyleSheet, View, Text, TouchableOpacity, Button} from 'react-native';
 
 const Card = ({product, removeHandler}) => {
+  // Takes in the product as the data and a callback
+  // for the remove button in props
   return (
     <TouchableOpacity activeOpacity={0.4}>
       <View style={styles.card}>
@@ -10,6 +14,7 @@ const Card = ({product, removeHandler}) => {
           <Button
             color="#ee524a"
             title="remove"
+            // Callback to remove product by passing in the id
             onPress={() => removeHandler(product.id)}
           />
         </View>
@@ -20,6 +25,7 @@ const Card = ({product, removeHandler}) => {
   );
 };
 
+// CSS stylesheet
 const styles = StyleSheet.create({
   card: {
     borderRadius: 5,
