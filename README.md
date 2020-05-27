@@ -72,5 +72,5 @@ react-native run-android
 Or
 
 ```bash
-yarn adnroid
+yarn android
 ```
