@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "887475779396",
+    "firebase_url": "https://gradspace-6c8c0.firebaseio.com",
+    "project_id": "gradspace-6c8c0",
+    "storage_bucket": "gradspace-6c8c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887475779396:android:2d4f1149eae26007730911",
+        "android_client_info": {
+          "package_name": "com.sellbasic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887475779396-3om7gge9e3f0ug7h9rsh4i4jdqocltv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDviM-hfEUJNzKV-Z0EgRgPVQS-vhV99do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887475779396-3om7gge9e3f0ug7h9rsh4i4jdqocltv0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "887475779396-uccjh8ebgjhce29ol7u9qtt7dvt5qvcd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.sellbasic"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
