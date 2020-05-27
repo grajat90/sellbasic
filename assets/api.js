@@ -36,7 +36,7 @@ export async function getProducts(onFetch) {
   products = [];
   await firestore()
     .collection('products')
-    .orderBy('submitted', 'asc')
+    .orderBy('submitted', 'asc') //always have newest listing on top
     .get()
     .then((docs) => {
       docs.forEach((doc) => {
