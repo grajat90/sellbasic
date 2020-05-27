@@ -9,8 +9,9 @@
 Simple marketplace to lists products that one might want to sell.
 
 <div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img height=500 src='https://s7.gifyu.com/images/add.gif' />
-&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img height=500 src='https://s7.gifyu.com/images/remove.gif' />
 </div>
 
