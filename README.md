@@ -8,8 +8,8 @@
 
 Simple marketplace to lists products that one might want to sell.
 
-![Alt Text](https://github.com/grajat90/sellbasic/disp/add.gif)
-![Alt Text](https://github.com/grajat90/sellbasic/disp/remove.gif)
+![Alt Text]('https://github.com/grajat90/sellbasic/disp/add.gif')
+![Alt Text]('https://github.com/grajat90/sellbasic/disp/remove.gif')
 
 #### Stack:
 
