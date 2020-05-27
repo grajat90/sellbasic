@@ -4,8 +4,6 @@
 
 ---
 
-## Basic React Native & Firebase project
-
 Simple marketplace to lists products that one might want to sell.
 
 <div>
