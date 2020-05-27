@@ -61,7 +61,7 @@ An iOS simulator should start up. Give it plenty of time to comile the app and r
 
 ### 3. Android - untested
 
-Install (android studio and sdk tools)[https://developer.android.com/studio] and start a simulator. Preferentially, on the latest Andorid version.
+Install [android studio and sdk tools](https://developer.android.com/studio) and start a simulator. Preferentially, on the latest Andorid version.
 
 Then simply , in the root directory of the project, run:
 
