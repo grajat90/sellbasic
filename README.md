@@ -8,8 +8,10 @@
 
 Simple marketplace to lists products that one might want to sell.
 
+<div style="text-align:center;">
 ![Alt Text](https://s7.gifyu.com/images/add.gif)
 ![Alt Text](https://s7.gifyu.com/images/remove.gif)
+</div>
 
 #### Stack:
 
