@@ -8,8 +8,8 @@
 
 Simple marketplace to lists products that one might want to sell.
 
-![Alt Text](https://github.com/grajat90/sellbasic/disp/add.gif)
-![Alt Text](https://github.com/grajat90/sellbasic/disp/remove.gif)
+![Alt Text](https://s7.gifyu.com/images/add.gif)
+![Alt Text](https://s7.gifyu.com/images/remove.gif)
 
 #### Stack:
 
@@ -61,7 +61,7 @@ An iOS simulator should start up. Give it plenty of time to comile the app and r
 
 ### 3. Android - untested
 
-Install (android studio and sdk tools)[https://developer.android.com/studio] and start a simulator. Preferentially, on the latest Andorid version.
+Install [android studio and sdk tools](https://developer.android.com/studio) and start a simulator. Preferentially, on the latest Andorid version.
 
 Then simply , in the root directory of the project, run:
 
