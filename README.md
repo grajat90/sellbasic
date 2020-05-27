@@ -1,4 +1,4 @@
-# GradSpace Coding Task
+# A basic React Native Firebase project
 
 ### Rajat Goel
 
